@@ -1,0 +1,38 @@
+.home-img {
+  height: 30vh;
+  width: 90%;
+  margin: auto;
+}
+
+.Home-ul {
+  list-style-type: none;
+}
+
+.pd {
+  padding: 10px;
+}
+
+.over {
+  overflow: hidden;
+}
+
+.home-ul-flex {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: #0f172a;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  font-size: 25px;
+}

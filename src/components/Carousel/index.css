@@ -1,0 +1,25 @@
+.home-img {
+  height: 30vh;
+  width: 90%;
+  margin: auto;
+}
+
+.Home-ul {
+  list-style-type: none;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.over {
+  overflow: hidden;
+}
+
+.carousel-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

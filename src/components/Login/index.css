@@ -1,0 +1,136 @@
+.login-container-fluid {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.h1-login {
+  color: orange;
+}
+
+.login-banner {
+  height: 100vh;
+  width: 35vh;
+}
+
+.login-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+.main-content {
+  padding: 15px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.flex-1 {
+  display: flex;
+  flex-direction: column;
+  width: 60vh;
+}
+
+.contents {
+  display: contents;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+}
+
+.login-input:focus {
+  box-shadow: rgba(255, 69, 0) -5px -5px;
+  outline: none;
+  border: none;
+}
+
+.label-login {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.login-btn {
+  background-color: #f7931e;
+  padding: 5px 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.err {
+  color: red;
+}
+
+@media only screen and (min-width: 650px) {
+  .login-banner {
+    width: 38vh;
+  }
+  .main-content {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .login-logo {
+    display: none;
+  }
+  .h1-login {
+    display: none;
+  }
+  .main-content {
+    box-shadow: none;
+  }
+  .login-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+  .login-banner {
+    height: 60vh;
+    width: 45vh;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 40%;
+  }
+  .main-content {
+    width: 22vh;
+  }
+  .form {
+    width: 20vh;
+  }
+  .login-container-fluid {
+    width: 100vh;
+  }
+  .label-login {
+    margin-left: 20px;
+  }
+  .login-input {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .login-banner {
+    width: 80vh;
+  }
+  .login-logo {
+    display: none;
+  }
+  .main-content {
+    padding: 30px 55px;
+  }
+}

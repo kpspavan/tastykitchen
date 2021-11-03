@@ -1,0 +1,18 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nt-button {
+  background-color: orange;
+  padding: 13px 20px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.nt-para {
+  text-align: center;
+  font-size: 25px;
+}

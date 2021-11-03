@@ -1,0 +1,47 @@
+.filter-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.filter-h1 {
+  font-size: 25px;
+}
+
+.filter-select {
+  width: 19vh;
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  font-size: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.filter-para {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.filter-h1 {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .filter-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.filter-sort {
+  width: 19vh;
+}

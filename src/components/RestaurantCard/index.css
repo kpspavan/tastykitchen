@@ -1,0 +1,47 @@
+.food {
+  height: 25vh;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 25vh;
+}
+
+.h1-food {
+  font-size: 18px;
+  font-weight: bold;
+
+  width: 25vh;
+}
+
+.food-item-flex {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.food-flex {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.flex-food {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .food {
+    height: 20vh;
+  }
+}
+
+.food-li {
+  margin: 5px;
+}
+
+.link-items {
+  text-decoration: none;
+}
