@@ -106,8 +106,71 @@ class Login extends Component {
     )
   }
 
+  rendermobileViewbanner = () => {
+    const {username, password, showerrMsg, err} = this.state
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
+    return (
+      <div className="mobile-view-banner">
+        <div>
+          <div>
+            <div>
+              <div>
+                <img src={banner} className="login-logo" alt="website logo" />
+              </div>
+
+              <h1 className="h1-login">Tasty Kitchens</h1>
+              <h1>Login</h1>
+              <form onSubmit={this.submitForm} className="form">
+                <div className="flex-1">
+                  <div className="contents">
+                    <label className="label-login" htmlFor="username">
+                      USERNAME
+                    </label>
+                    <input
+                      onChange={this.onChangeUsername}
+                      value={username}
+                      className="login-input"
+                      type="text"
+                      placeholder="Enter Your Username"
+                      id="username"
+                    />
+                  </div>
+                  <div className="contents">
+                    <label className="label-login" htmlFor="password">
+                      PASSWORD
+                    </label>
+                    <input
+                      onChange={this.onChangepasswoard}
+                      value={password}
+                      className="login-input"
+                      type="password"
+                      placeholder="Enter Your Password"
+                      id="password"
+                    />
+                  </div>
+                  <button type="submit" className="login-btn">
+                    Login
+                  </button>
+                  {showerrMsg ? <p className="err">{err}</p> : ''}
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   render() {
-    return <div>{this.renderdesktopViewbanner()}</div>
+    return (
+      <div>
+        {this.renderdesktopViewbanner()}
+        {this.rendermobileViewbanner()}
+      </div>
+    )
   }
 }
 
